@@ -1,8 +1,21 @@
 <templateSet group="AndroidCustom">
-  <template name="cvc" value="public $VIEW$(Context context) {&#10;    this(context, null);&#10;}&#10;&#10;public $VIEW$(Context context, AttributeSet attrs) {&#10;    this(context, attrs, 0);&#10;}&#10;&#10;public $VIEW$(Context context, AttributeSet attrs, int defStyleAttr) {&#10;    this(context, attrs, defStyleAttr, 0);&#10;}&#10;&#10;@TargetApi(Build.VERSION_CODES.LOLLIPOP)&#10;public $VIEW$(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {&#10;    super(context, attrs, defStyleAttr, defStyleRes);&#10;    init(context);&#10;}&#10;&#10;private void init(Context context) {&#10;&#10;}" description="Custom View construtors" toReformat="true" toShortenFQNames="true">
+  <template name="cvc" value="public $VIEW$(Context context) {&#10;    super(context);&#10;    init(context, null);&#10;}&#10;&#10;public $VIEW$(Context context, AttributeSet attrs) {&#10;    super(context, attrs);&#10;    init(context, attrs);&#10;}&#10;&#10;public $VIEW$(Context context, AttributeSet attrs, int defStyleAttr) {&#10;    super(context, attrs, defStyleAttr);&#10;    init(context, attrs);&#10;}&#10;&#10;@TargetApi(Build.VERSION_CODES.LOLLIPOP)&#10;public $VIEW$(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {&#10;    super(context, attrs, defStyleAttr, defStyleRes);&#10;    init(context, attrs);&#10;}&#10;&#10;private void init(Context context, AttributeSet attrs) {&#10;$cursor$&#10;}" description="Custom View construtors" toReformat="true" toShortenFQNames="true">
     <variable name="VIEW" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="tie" value="timber.log.Timber.e(throwable, &quot;Error during $cursor$&quot;);" description="Timber error message" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="Error during" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tii" value="timber.log.Timber.i(&quot;$cursor$&quot;);" description="Timber info message" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="Error during" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
 </templateSet>
