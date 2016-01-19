@@ -18,4 +18,10 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="tid" value="timber.log.Timber.d(&quot;$cursor$&quot;);" description="Timber debug message" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="Error during" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>

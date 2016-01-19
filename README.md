@@ -10,6 +10,7 @@ My ultimate goal is to build Android Live Templates repository which will be use
 ### Timber
 - tie - **Ti**mber **e**rror
 - tii - **Ti**mber **i**nfo
+- tid - **Ti**mber **d**ebug
 
 
 # TODO
