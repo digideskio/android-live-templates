@@ -24,4 +24,39 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="rePost" value="@retrofit.http.POST(&quot;/$url$&quot;)&#10;rx.Observable&lt;$responseType$&gt; $methodName$(@retrofit.http.Body $bodyType$);" description="Retrofit 1 POST template" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="responseType" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="bodyType" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="reGet" value="@retrofit.http.GET(&quot;/$url$&quot;)&#10;rx.Observable&lt;$responseType$&gt; get$methodName$($parameters$);" description="Retrofit 1 GET template" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="responseType" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parameters" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="rePut" value="@retrofit.http.PUT(&quot;/$url$&quot;)&#10;rx.Observable&lt;$responseType$&gt; $methodName$(@retrofit.http.Body $bodyType$);" description="Retrofit 1 PUT template" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="responseType" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="bodyType" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="reDelete" value="@retrofit.http.DELETE(&quot;/$url$&quot;)&#10;rx.Observable&lt;Response&gt; delete$methodName$($parameters$);" description="Retrofit 1 DELETE template" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parameters" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>

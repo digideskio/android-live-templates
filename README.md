@@ -12,6 +12,11 @@ My ultimate goal is to build Android Live Templates repository which will be use
 - tii - **Ti**mber **i**nfo
 - tid - **Ti**mber **d**ebug
 
+### Retrofit 1
+- reDelete
+- reGet
+- rePost
+- rePut
 
 # TODO
 - install script
