@@ -59,4 +59,10 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="menu" value="@java.lang.Override&#10;public boolean onCreateOptionsMenu(android.view.Menu menu) {&#10;    getMenuInflater().inflate(R.menu.$cursor$, menu);&#10;    return true;&#10;}&#10;&#10;@java.lang.Override&#10;public boolean onOptionsItemSelected(android.view.MenuItem item) {&#10;    item.getItemId();&#10;    return true;&#10;}" description="Android menu handling" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
